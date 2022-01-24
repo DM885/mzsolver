@@ -9,6 +9,11 @@ spec:
     imagePullPolicy: Always
     ports:
     - containerPort: 3000
+    resources:
+      requests:
+        memory: "64Mi"
+      limits:
+        memory: "1024Mi"
     env:
     - name: mysqlHost
       value: "mysql.default.svc.cluster.local"
@@ -45,6 +50,11 @@ spec:
     imagePullPolicy: Always
     ports:
     - containerPort: 3000
+    resources:
+      requests:
+        memory: "64Mi"
+      limits:
+        memory: "1024Mi"
     env:
     - name: mysqlHost 
       value: "mysql.default.svc.cluster.local"
@@ -81,6 +91,11 @@ spec:
     imagePullPolicy: Always
     ports:
     - containerPort: 3000
+    resources:
+      requests:
+        memory: "64Mi"
+      limits:
+        memory: "1024Mi"
     env:
     - name: mysqlHost 
       value: "mysql.default.svc.cluster.local"
@@ -117,6 +132,11 @@ spec:
     imagePullPolicy: Always
     ports:
     - containerPort: 3000
+    resources:
+      requests:
+        memory: "64Mi"
+      limits:
+        memory: "1024Mi"
     env:
     - name: mysqlHost 
       value: "mysql.default.svc.cluster.local"
