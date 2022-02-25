@@ -7,9 +7,10 @@ jest.mock('fs');
 jest.mock('../src/Solver.js');
 
 
+
 let msg;
 
-describe('A MiniZincService', () => {
+describe('A MiniZincService testing22', () => {
 
   beforeEach(() => {
     publishFn.mockClear();
