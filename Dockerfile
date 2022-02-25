@@ -12,7 +12,7 @@ COPY package*.json ./
 
 RUN npm ci --only=production
 
-# Copy all files to directory
+# Copy all files to directory  !!
 COPY . .
 
 # CMD ["npm", "run", "start"]
