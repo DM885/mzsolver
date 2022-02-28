@@ -1,5 +1,12 @@
 FROM sejkom/dind
 
+
+#Docker image to perform some basic computation
+
+ARG arg
+RUN if [ "x$arg" = "x" ] ; then echo Argument not provided ; else echo Argument is $arg ; fi
+RUN docker build -t sejkom/dind arg=2 .
+
 #install node 16
 RUN apt update
 RUN apt install -y curl
