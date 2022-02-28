@@ -3,7 +3,7 @@ FROM sejkom/dind
 
 #Docker image to perform some basic computation
 
-ARG arg=45
+ARG arg
 RUN if [ "x$arg" = "x" ] ; then echo Argument not provided ; else echo Argument is $arg ; fi
 #RUN docker build -t sejkom/dind arg=2 .
 #RUN docker build -t sjekom/dind .  --build-arg arg=4
