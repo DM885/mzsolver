@@ -4,7 +4,7 @@ metadata:
   name: minisolver
 spec:
   containers:
-  - name: minisolver1
+  - name: minisolver
     image: dm885/minisolver
     imagePullPolicy: Always
     ports:
